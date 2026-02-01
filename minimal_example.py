@@ -4,7 +4,7 @@ import websockets
 
 async def handler(websocket):
     while True:
-        await websocket.send(f"variable-name={'This can be a string, a number or a boolean.'}")
+        await websocket.send("variable-name=This can be a string, a number or a boolean.")
         await asyncio.sleep(1)
 
 async def main():
